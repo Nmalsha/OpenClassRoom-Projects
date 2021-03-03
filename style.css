@@ -1,1 +1,26 @@
-/** Just test */
+
+body {
+  margin: 0; }
+
+/*text under the logo */
+.firsttext {
+  margin-left: 80px;
+}
+#text2{
+opacity: 0.6;
+}
+/*serchbar */
+.input-group{
+  margin-left: 80px;
+}
+/*localosation icon */
+svg{
+  border-radius: 5px 0;
+}
+/*button group */
+.btn-container{
+  margin-left: 80px;
+}
+i{
+  border: 1px solid;
+}

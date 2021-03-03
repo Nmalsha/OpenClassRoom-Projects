@@ -2,18 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8" />
-       
-        <link rel="stylesheet" type="text/css">
-        <script type='text/javascript'
-  src='http://code.jquery.com/jquery-1.8.3.js'></script>
-        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <script type='text/javascript'src='http://code.jquery.com/jquery-1.8.3.js'></script>
         <script src="https://kit.fontawesome.com/95d302c68f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link rel="stylesheet"  type="text/css" href="style.css" />
        
-    
-<link rel="stylesheet" href="style.css"/>
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        
        <title></title>
 
@@ -23,26 +20,27 @@
     </head>
 
     <body>
+        <!-- navigation bar -->
         <div class="container">
-            <!-- navigation bar -->
+            
              <div class="row">
                  <div class="col-5 col-md-8 col-lg-6">
-                     <img src="img/Reservia.svg" alt="logo image">
+                     <img class="logo"src="img/Reservia.svg" alt="logo image">
                  </div>
                  
-                <nav class="col-7 col-md-4 col-lg-6 navbar navbar-expand-lg navbar-light">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <nav class=" col-5 col-md-8 col-lg-6 navbar navbar-expand-lg navbar-light" >
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                       </button>
-                     <div id="navbarContent" class="collapse navbar-collapse">
-                         <ul class="navbar-nav">
+                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                         <ul class="navbar-nav mr-auto">
                            <li class="nav-item active">
-                             <a class="nav-link" href="#">Hebérgement</a>
+                             <a class="nav-link" href="#">Hebérgement<span class="sr-only">(current)</span></a>
                              
                            </li>
                            <li class="nav-item">
                              <a class="nav-link" href="#">Activités</a>
-                             hgrhgrohjgr
+                             
                            </li>
                            <li class="nav-item">
                              <a class="nav-link" href="#">S'inscrire</a>
@@ -53,35 +51,47 @@
              </div>
          </div>       
 
-<!-- text -->
-<p id="text1"><b>Trouvez votre hébergement pour des vacances de réve</b> </p> 
-<p id="text2">En plein centre ville ou en pleine nature</p>
+<!-- text --><div class="firsttext"><p id="text1"><b>Trouvez votre hébergement pour des vacances de réve</b> </p> 
+<p id="text2">En plein centre ville ou en pleine nature</p></div>
+
 
 
 <!-- serche bar -->
 <div class="input-group mb-3">
     <div class="input-group-prepend">
-       
-      <span class="input-group-text" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+    <!--   localisation icon  -->       
+      <span style="border-radius: 10px 0px 0px 10px;" class="input-group-text" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
             </svg></span>
             <input type="text" class="form-control" id= "position" placeholder="Marseille,France" aria-label="Username" aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon2">Rechecher</span>
+            <span style="border-radius: 0px 10px 10px 0px;"class="input-group-text" id="basic-addon2">Rechecher</span>
     
         </div>
     
     </div>
 </div>
 <!-- button group -->
-Filter
-<i class="fas fa-child">toto</i>
+<div class="btn-container">
+    <div class="row">
+     
+            
+                Filtres
+                <div class="col-2"><i class="fas fa-money-bill-wave"></i><button type="button" class="btn btn-outline-dark">Econimique</button></div>
+                <div class="col-2"><i class="fas fa-male"></i><button type="button" class="btn btn-outline-dark">Familial</button></div>
+                <div class="col-2"><i class="fas fa-heart"></i><button type="button" class="btn btn-outline-dark">Romantique</button></div>
+                <div><i class="fas fa-dog"></i><button type="button" class="btn btn-outline-dark">Animaux autorisés</button></div>
+   
+    </div>
+
+</div>
+
 <!-- first left image container - hebergements with 6 images -->
 <div class="container2">
     <p class="imglot1"><b>Hébergements à Marseille</b></p>
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 expend ">
+        <div class="col-12 col-md-6 col-lg-4 expend ">
             <div class="card" style="width: 12rem;margin-left: 3px;">
-                <img src="img/Auberge-med.jpg" class="card-img-top"  alt=”photo”>
+                <img src="img/Auberge-sm.jpg" class="card-img-top"  alt=”photo”>
                 <div class="card-text">
                         <h6 class="card-title" ><b>Auberge la Cannebiére</b></h6>
                         Nuit à partie de 25<br>
@@ -109,7 +119,7 @@ Filter
         </div>
         <div class="col-12 col-md-6 col-lg-4 expend">
             <div class="card" style="width: 12rem;margin-right:0pxm;">
-                <img class="card-img-top" src="img/hotellesmouettes-med.jpg" alt=”hébegement photo”>
+                <img class="card-img-top" src="img/hotellesmouettes-sm.jpg" alt=”hébegement photo”>
                 
                     
                     <div class="card-text"><h6 class="card-title"><b>Hotel Les mouettes</b></h6>
@@ -121,7 +131,7 @@ Filter
 
   
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 expend">
+        <div class="col-12 col-md-6 col-lg-4 expend">
             <div class="card" style="width: 12rem;margin-left: 3px; " >
                 <img class="card-img-top" src="img/hoteldelamer.jpg" alt=”hébegement photo”>
                 
@@ -162,7 +172,7 @@ Filter
         <div class="row">
             <div class="col-12 col-md-6 col-lg-5 expend ">
                 <div class="card " style="width: 15rem;overflow: hidden; margin-left: 2px;">
-                    <img class="card-img-top1 " style="position: absolute;object-fit: cover;padding: 5px;   max-width: 50%" src="img/hotelchezamina.jpg" alt=”hébegement photo”>
+                    <img class="card-img-top1 " style="position: absolute;object-fit: cover;padding: 5px;   max-width: 50%" src="img/hoteldesoleildumatin-sm.jpg" alt=”hébegement photo”>
                 
                     <div class="card-text2 rightimgtext">
                     <h6 class="card-title"><b>Titre de la carte</b></h6>
@@ -175,7 +185,7 @@ Filter
     <div class="row">
         <div class="col-12 col-md-6 col-lg-3 expend">
             <div class="card" style="width: 14rem; ">
-                <img class="card-img-top " src="img/hotelchezamina.jpg" alt=”hébegement photo”>
+                <img class="card-img-top " src="img/aucoeurdel'eauchabre-sm.jpg" alt=”hébegement photo”>
                 <div class="card-body">
                     <h6 class="card-title">Titre de la carte</h6>
       <p class="card-text">Contenu textuel de la carte</p>
@@ -186,7 +196,7 @@ Filter
     <div class="row">
         <div class="col-12 col-md-6 col-lg-3 expend">
             <div class="card" style="width: 14rem; ">
-                <img class="card-img-top " src="img/hotelchezamina.jpg" alt=”hébegement photo”>
+                <img class="card-img-top " src="img/hoteltoutblueetbloanc.jpg" alt=”hébegement photo”>
                 <div class="card-body">
                     <h6 class="card-title">Titre de la carte</h6>
       <p class="card-text">Contenu textuel de la carte</p>
