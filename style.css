@@ -36,10 +36,11 @@ i{
 img{
   height: 8rem;
   padding: 5px;
-  object-fit: cover
+  object-fit: cover;
+  border-radius: 10px;
 }
 .card{
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   width: 12rem;
   margin-left:20px;
 }
@@ -47,12 +48,20 @@ img{
   background-color:#d4d4aa;
   padding-left: 5px;
   margin-left: 50px;
-  margin-top: 5px;
+  margin-top:20px;
   border-radius: 10px;
   
 }
 .container3{
   background-color:#d4d4aa;
-margin-left: 0px;
+margin-left: 10px;
 border-radius: 10px;
+margin-top:20px;
+padding-bottom: 20px;
 }
+
+
+
+/* activity section */
+.left-box{ position:relative; padding-top:30px;}
+.right-box{position:relative; padding-top:30px;}
