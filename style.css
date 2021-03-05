@@ -20,20 +20,28 @@ svg{
   border-radius: 5px 0;
 }
 /*button group */
+
+/*icon styling */
 i{
   color:Dodgerblue;
+  
 }
+
 .icon{
-  border: 1px solid;
- 
+  border:none;
+ padding: 6px;
   border-radius: 10px;
+ background-color:#ccccff ; 
+
 }
+/*button styling */
 .btn{
   font-size: 12px;
-  border-radius:0px 10px 10px 0px;
-  border: 1px  slide ;
-  border-left: none;
+  border-radius:20px 20px 20px 20px;
+  border: 0.3px  slide ;
+  
   padding: 3px;
+  
  
 }
 /* first image containers*/
