@@ -1,5 +1,6 @@
 body {
-  margin-left: 50px; }
+  margin-left: 50px; 
+  font-family: 'Raleway', sans-serif;}
 
 h6 {
   font-size: 12px;
@@ -78,7 +79,7 @@ img {
 
 /* second left image containers plus populaires*/
 .container2 {
-  background-color: #e0e0d1;
+  background-color: #F2F2F2;
   padding-left: 5px;
   margin-top: 20px;
   border-radius: 10px; }
@@ -103,7 +104,7 @@ img {
 
 /* thirrd right image containers*/
 .container3 {
-  background-color: #e0e0d1;
+  background-color: #F2F2F2;
   margin-left: 10px;
   border-radius: 10px;
   margin-top: 20px;
@@ -112,7 +113,7 @@ img {
 /*footer section */
 .container-footer {
   margin-top: 30px;
-  background-color: #e0e0d1; }
+  background-color: #F2F2F2; }
 
 .text_link {
   font-size: 13px;
@@ -149,3 +150,8 @@ img {
   border-radius: 10px !important; }
 
 /*# sourceMappingURL=style.css.map */
+
+/*footer */
+.container-footer{
+  text-decoration-color: black;
+}
