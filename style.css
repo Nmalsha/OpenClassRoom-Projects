@@ -6,7 +6,9 @@ body {
   #linkhébergement{
     border-top: 0.5px solid blue;
   }
-
+.nav-link{
+  font-size: 12px;
+}
 /*text under the logo */
 .firsttext{
   margin-top: 20px;
