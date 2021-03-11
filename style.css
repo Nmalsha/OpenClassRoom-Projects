@@ -34,10 +34,17 @@ svg {
   .serchbar{
     border-radius: 0px 10px 10px 0px;
   }
+  .lefttext{
+    border-radius: 10px 0px 0px 10px;
+  }
+  #righttext{
+    border-radius: 0px 10px 10px 0px;
+  }
 
 /*button group */
 #linkfabtn{
   width: 90px;
+  margin-left: 10px;
 }
 #iconfabtn{
   padding: 8px;
@@ -47,16 +54,21 @@ i {
   color: Dodgerblue; }
 
 .icon {
+  position: relative;
+width: 30px;
+height: 30px;
   border: none;
   padding: 6px;
-  border-radius: 10px;
-  background-color: #ccccff; }
+  border-radius: 20px 20px;
+  background-color: #f2f2f2;
+  
+ }
 
 /*button styling */
 .btn {
   font-size: 12px;
   border-radius: 20px 20px 20px 20px;
-  border: 0.1px slide;
+  border: 0.1px solid;
   padding: 3px; }
 
 /* first left image containers 6imgs*/
@@ -68,6 +80,12 @@ i {
   flex-wrap: wrap;
   display: flex;
   flex-direction:column;
+  justify-content: center;
+ }
+ .container div{
+  width: 170px;
+  margin: 10px;
+  text-align: center;
  }
  .text4{
    font-size: 12px;
@@ -88,6 +106,7 @@ i {
   width: 80%;
   margin: 0 auto;
   justify-content:space-around;
+ margin-left: 20px;
 }
 #secondLine{
   display: flex;
@@ -95,14 +114,17 @@ i {
   width: 80%;
   margin: 0 auto;
   justify-content:space-around;
+  margin-left: 20px;
 }
 @media(min-width:768px) and (max-width:992px) {
 
   #firstLine {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+   
     justify-content: space-evenly;
+    
   }
 
   #secondLine {    
@@ -120,14 +142,7 @@ i {
     align-items: center;
   }
 }
- /*
-#thirdimg{
-  margin-left: 60px;
-}
-.imglot1 {
-  font-size: 12px;
-   }
-*/
+
 img {
   height: 8rem;
   padding: 5px;
@@ -137,6 +152,8 @@ img {
 .card {
   border-radius: 10px;
   width: 12rem;
+  box-shadow: 2px 4px 2px #dfdbdb;
+  
  
    }
    .card-text {
@@ -153,7 +170,7 @@ img {
 /* second right image containers plus populaires 3imgs*/
 .container2 {
   background-color: #F2F2F2;
-  margin-left: 10px;
+ 
   border-radius: 10px;
   margin-top: 20px;
   padding-bottom: 40px; 
@@ -169,81 +186,27 @@ img {
 @media(max-width:767px) {
 
   .container2{
-   
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+  .activityimg{
+    margin-left: 87px;
+
+  }
+ 
 }
 .rightimg{
   position: absolute;padding: 5px;   max-width: 50%;
 }
 .threeimgcard{
-  width: 14rem;height: 8rem; margin-left: 2px;
+  width: 14rem;height:8rem; margin-left: 2px;margin-top: 10px;;
 }
 .rightimgtext{
   font-size: 11px;text-align: right;
 }
 
-/*
-.d_flex {
-  flex-wrap: nowrap;
-  flex-direction:column;
-}
 
-#first-line {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 80%;
-  margin: 0 auto;
-  justify-content:space-evenly;
-}
-
-#second-line {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 80%;
-  margin: 0 auto;
-  justify-content:space-evenly;
-}
-
-@media(min-width:768px) and (max-width:992px) {
-
-  #first-line {
-    flex-wrap: nowrap;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  #second-line {    
-    flex-wrap: nowrap;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-}
-
-@media(max-width:767px) {
-
-  .d_flex {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
-*/
-
-/*
-  #row1{
-    margin-top: 15px ;margin-bottom: 25px ;width: 20rem;
-  }
-  #row2{
-    margin-top: 25;
-  }
-  #row3{
-    margin-top: 25px;width: 15rem;
-  }
-  */
  
   /* activity section */
 h6 {
@@ -259,9 +222,11 @@ h6 {
 }
 .short-div{
   width: 14rem;
+  box-shadow:2px 4px 2px #dfdbdb
 }
+
 .activityimg{
-  height:90%;object-fit: cover;width: 14rem;
+  height:90%;object-fit: cover;width: 14rem;box-shadow:2px 4px 2px #dfdbdb
 }
 #activityimg2{
   padding:0px;margin-left: 90px;

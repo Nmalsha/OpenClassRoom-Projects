@@ -3,41 +3,31 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-        <script type='text/javascript'src='http://code.jquery.com/jquery-1.8.3.js'></script>
+        <script src='http://code.jquery.com/jquery-1.8.3.js'></script>
         <script src="https://kit.fontawesome.com/95d302c68f.js" crossorigin="anonymous"></script>
-        
-        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-       <link rel="stylesheet"  type="text/css" href="style.css" />
-       
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
-       
-       <title></title>
-
-
-
-
+        <link rel="stylesheet"  type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
+       <title>Reservia</title>
     </head>
 
-    <body>
+<body>
         <!-- navigation bar -->
         <div class="container-nav">
-            
-             <div class="row">
+            <div class="row">
                  <div class="col-5 col-md-8 col-lg-6">
-                     <img style="height:3rem" class="logo"src="img/Reservia.svg" alt="logo image">
+                     <img style="height:3rem" class="logo" src="img/Reservia.svg" alt="logo image">
                  </div>
                  
                 <nav class=" col-5 col-md-8 col-lg-6 navbar navbar-expand-lg navbar-light" >
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                       </button>
                      <div id="navbarSupportedContent" class="collapse navbar-collapse">
                          <ul class="navbar-nav mr-auto">
                            <li class="nav-item active">
-                             <a id="linkhébergement"class="nav-link" href="#Hebérgement">Hebérgement<span class="sr-only">(current)</span></a>
+                             <a id="linkhébergement" class="nav-link" href="#Hebérgement">Hebérgement<span class="sr-only">(current)</span></a>
                              
                            </li>
                            <li class="nav-item">
@@ -63,11 +53,11 @@
 <div class="input-group mb-3">
     <div class="input-group-prepend">
     <!--   localisation icon  -->       
-      <span style="border-radius: 10px 0px 0px 10px;" class="input-group-text " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+      <span  class="input-group-text lefttext" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
             </svg></span>
             <input type="text" class="form-control"  placeholder="Marseille,France" aria-label="Username" aria-describedby="basic-addon1">
-            <span style="border-radius: 0px 10px 10px 0px;"class="input-group-text ">Rechecher</span>
+            <span  ID="righttext" class="input-group-text righttext ">Rechecher</span>
     
         </div>
     
@@ -103,14 +93,16 @@
    
     </div>
 </div>
-<p  id="text3"> Plus de 500 logements sont disponibledans cette ville</p></div>
+<p  id="text3"> <i style="padding: 5px;" class="fal fa-info-circle "></i> Plus de 500 logements sont disponibledans cette ville</p>
+
 <!-- first left image container - hebergements with 6 images -->
-<div class=""wrapper-imgcontainer>
+<div class="wrapper-imgcontainer">
 <div class ="row">
 <div class = "col-lg-9 expend">
-<div class="container"id="Hebérgement" >
+<div class="container" id="Hebérgement">
     <p class="text4"><b>Hébergements à Marseille</b></p>
     <section id="firstLine">
+      <a href="#">
         <div class="card" >
             <img src="img/Auberge-sm.jpg" class="card-img-top"  alt=”photo”>
             <div class="card-text">
@@ -121,44 +113,55 @@
                         </span>
                     </span>
             </div>
+          </a>
   
         </div>
-        <div class="card" >
-            <img src="img/hotelduport-sm.jpg" class="card-img-top" src=”img/hotelduport-sm.jpg” alt=”hébegement photo”>
+        <a href="#">
+          <div class="card" >
+            <img src="img/hotelduport-sm.jpg" class="card-img-top" src=”img/hotelduport-sm.jpg” alt=”hébegement_photo”>
             <div class="card-text">
                     <b>Hotel du port</b><br>
                     Nuit à partie de 52<br>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
         </div>
-        <div class="card" >
+      </a>
+        <a href ="#">
+          <div class="card" >
             <img class="card-img-top" src="img/hotellesmouettes-sm.jpg" alt=”hébegement photo”>
             <div class="card-text"><b>Hotel Les mouettes</b><br>
                     Nuit à partie de 76<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
             </div>
         </div>
+      </a>
     </section>
     
     <section id="secondLine">
+      <a href="#">
         <div class="card"  >
             <img  class="card-img-top " src="img/hoteldelamer.jpg" alt=”hébegement photo”>
             <div class="card-text" ><b>Hotel de la mer</b><br>
                     Nuit à partie de 46<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
             </div>
         </div>
-        <div class="card">
+      </a>
+        <a href="#">
+          <div class="card">
             <img class="card-img-top" src="img/aubergelapanier.jpg" alt=”hébegement photo”>
                 <div class="card-text"> <b>Auberge Le Panier</b><br>
                     Nuit à partie de 23<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                 </div>
         </div>
-        <div class="card" >
+      </a>
+        <a href="#">
+          <div class="card" >
             <img class="card-img-top " src="img/hotelchezamina.jpg" alt=”hébegement photo”>
                 <div class="card-text"> 
                     <b>Hotel chez Amina</b><br>
                     Nuit à partie de 96<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></div>
                 </div>
         </div>
+      </a>
          
     </section>
     <p class="text5"><b>Afficher plus</b></p> 
@@ -168,7 +171,8 @@
 <div class="container2">
     <p class="imglot1"><b>Les plus populaires</b></p>
     <div class="card threeimgcard" >
-        <div class="card-horizontal" >
+        <div class="card-horizontal " >
+          <a href="#">
             <div class="img-square-wrapper">
                 <img  class="rightimg" src="img/hoteldesoleildumatin-sm.jpg" alt="Card image cap">
             </div>
@@ -176,10 +180,12 @@
                 <h4 class="card-title rightimgtext"><b>Hotel le <br>soleil du matin</b></h4>
                 <p  class="card-text rightimgtext">Nuit à partir de 128 <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
+          </a>
         </div>
-    </div>
+   </div>
     <div class="card threeimgcard" >
         <div class="card-horizontal">
+          <a href="#">
             <div class="img-square-wrapper">
                 <img class="rightimg" src="img/aucoeurdel'eauchabre-sm.jpg" alt="Card image cap">
             </div>
@@ -188,9 +194,11 @@
                 <p   class="card-text rightimgtext">Nuit à partir de 71 <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
             </div>
         </div>
+      </a>
     </div> 
     <div class="card threeimgcard" >
         <div class="card-horizontal">
+          <a href="#">
             <div class="img-square-wrapper">
                 <img class="rightimg" src="img/hoteltoutblueetbloanc_escale.jpg" alt="Card image cap">
             </div>
@@ -198,8 +206,9 @@
                 <h4  class="card-title rightimgtext"><b>Hotel tout  <br>blue et blanc</b></h4>
                 <p  class="card-text rightimgtext">Nuit à partir de 68 <br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
             </div>
+          </a>
         </div>
-    </div>    
+      </div>    
 </div><!--container2 closse-->
 </div><!--col3 close-->
 </div><!--col9 close-->
@@ -216,9 +225,9 @@
    
     <div class="row">
      
-        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3" >
+        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3  ">
             <img class="card-img-top activityimg"  src="img/vieuxport.jpg" alt="Card image cap">
-            <h6 class="card-title">Vieux Port</h6>
+            <h6 class="card-title activityimg">Vieux Port</h6>
         </div>
             <div class="col-lg-3 col-md-2 col-sm-3 col-xs-2" style="margin-left: 90px;">
                 <div class="short-div" ><img class="card-img-top" src="img/fortdepomegues.jpg" alt="Card image cap">
@@ -236,9 +245,9 @@
   <div class = "col-lg-6 expend">
 <div class="container_RightActivity">   
     <div class="row">
-        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3" >
-              <img class="card-img-top activityimg " id=""src="img/parknational.jpg" alt="Card image cap">
-              <h6 class="card-title">Parc National des Calanques</h6>
+        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3  " >
+              <img class="card-img-top activityimg " src="img/parknational.jpg" alt="Card image cap">
+              <h6 class="card-title activityimg">Parc National des Calanques</h6>
         </div>
             <div class="col-lg-3 col-md-2 col-sm-3 col-xs-2" id="activityimg2" >
                 <div class="short-div" ><img class="card-img-top"  src="img/notredame.jpg" alt="Card image cap">
