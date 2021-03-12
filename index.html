@@ -57,7 +57,7 @@
         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
             </svg></span>
             <input type="text" class="form-control"  placeholder="Marseille,France" aria-label="Username" aria-describedby="basic-addon1">
-            <span  ID="righttext" class="input-group-text righttext ">Rechecher</span>
+            <span  id="righttext" class="input-group-text righttext ">Rechecher</span>
     
         </div>
     
@@ -66,31 +66,19 @@
 <!-- button group -->
 <div class="btn-container expend">
     <div class="row">
-     
-            
-                Filtres
-                <div class="col-8 col-md-6 col-lg-2 expend ">
-                    <a class="btn btn-default btn-outline-dark" href="#">
-                        <i class="fas fa-money-bill-wave pull_left icon "></i> Econimique</a>
-
-                </div>
-                <div class="col-8 col-md-6 col-lg-2 expend ">
-                        <a  id="linkfabtn" class="btn btn-default btn-outline-dark" href="#">
-                            <i id="iconfabtn" class="fas fa-male  pull_left icon "></i> Familial</a>
-    
-                </div>
-                <div class="col-8 col-md-6 col-lg-2 expend ">
-                        <a class="btn btn-default btn-outline-dark" href="#">
-                            <i class="fas fa-heart  pull_left icon "></i> Romantique</a>
-    
-                </div>
-                <div class="col-8 col-md-6 col-lg-2 expend ">
-                    <a class="btn btn-default btn-outline-dark" href="#">
-                        <i class="fas fa-dog pull_left icon "></i> Animaux autorisés</a>
-
-            </div>
-                
-   
+     <p>Filtres</p>
+      <div class=" expend button_group">
+        <i class="fas fa-money-bill-wave icon_filter "></i> Econimique
+      </div>
+      <div class=" expend button_group ">
+        <i  class="fas fa-male  pull_left icon_filter "></i> Familial
+      </div>
+      <div class=" expend button_group ">
+        <i class="fas fa-heart  pull_left icon_filter "></i> Romantique
+      </div>
+      <div  style="width: 190px;" id="lastbutton" class=" expend  button_group">
+        <i class="fas fa-dog pull_left icon_filter "></i> Animauxautorisés
+      </div>
     </div>
 </div>
 <p  id="text3"> <i style="padding: 5px;" class="fal fa-info-circle "></i> Plus de 500 logements sont disponibledans cette ville</p>
