@@ -80,6 +80,11 @@ i {
 .lastbutton{
   width: 190px;
 }
+.fas:before {
+  padding: 11px 0 0 7px;}
+  #icon_fami{
+    padding-left: 7px;
+  }
 
 /* first left image containers 6imgs*/
 .container {
@@ -127,7 +132,7 @@ i {
   margin-left: 20px;
 }
 @media(min-width:768px) and (max-width:992px) {
-
+  
   #firstLine {
     flex-wrap: wrap;
     width: 100%;
@@ -143,14 +148,13 @@ i {
     margin: 0 auto;
     justify-content: space-evenly;
   }
-}
-@media(max-width:767px) {
-
-  .container{
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  .container_leftactivity {
+    flex-wrap: nowrap;
   }
+  .container_RightActivity{
+    flex-wrap: nowrap;
+  }
+  
 }
 
 img {
@@ -194,7 +198,14 @@ img {
   
 }
 @media(max-width:767px) {
-
+  .threeimgcard{
+    margin-left: 90px;
+  }
+  .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .container2{
     flex-wrap: wrap;
     justify-content: center;
@@ -271,11 +282,11 @@ h6 {
   margin-left: 30px;
   text-align: left; }
 
-
-
-/*# sourceMappingURL=style.css.map */
-
 /*footer */
 .container-footer{
   text-decoration-color: black;
 }
+
+/*# sourceMappingURL=style.css.map */
+
+
