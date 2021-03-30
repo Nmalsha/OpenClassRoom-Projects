@@ -87,11 +87,14 @@
 <!-- first left image container - hebergements with 6 images -->
 <div class="wrapper-imgcontainer">
 <div class ="row">
-<div class = "col-lg-8  expend">
-<div class="container1" id="Hebérgement">
+  <div class = "col-lg-8  expend">
+  <div class="container1" id="Hebérgement">
     <p class="text4"><strong>Hébergements à Marseille</strong></p>
-    <section id="firstLine">
-      <div class="card" >
+
+    <!--  section line 1-->
+      <section id="firstLine">
+      <!-- card 1-->
+        <div class="card" >
           <a href="#">
             <img src="img/Auberge-sm.jpg" class="card-img-top"  alt=”photo”>
               <div class="card-text">
@@ -103,30 +106,32 @@
                     </span>
               </div>
           </a>  
-      </div>
-        
-      <div class="card" >
-        <a href="#">
+        </div>
+      <!-- card 2-->  
+        <div class="card" >
+          <a href="#">
           <img src="img/hotelduport-sm.jpg" class="card-img-top" src=”img/hotelduport-sm.jpg” alt=”hébegement_photo”>
             <div class="card-text">
                     <strong>Hotel du port</strong><br>
                     Nuit à partie de 52<br>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
-        </a>
-      </div>
-      <div class="card" >
-        <a href ="#">
+          </a>
+        </div>
+      <!-- card 3-->
+        <div class="card" >
+          <a href ="#">
           <img class="card-img-top" src="img/hotellesmouettes-sm.jpg" alt=”hébegement photo”>
             <div class="card-text"><strong>Hotel Les mouettes</strong><br>
                     Nuit à partie de 76<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
             </div>
-        </a>
-      </div>
+          </a>
+        </div>
       
     </section>
-    
+    <!-- section line2 -->
     <section id="secondLine">
+      <!-- card 1 -->
       <div class="card"  >
         <a href="#">
           <img  class="card-img-top " src="img/hoteldelamer.jpg" alt=”hébegement photo”>
@@ -135,6 +140,7 @@
             </div>
         </a>
       </div>
+      <!-- card 2 -->
       <div class="card">
         <a href="#">
           <img class="card-img-top" src="img/aubergelapanier.jpg" alt=”hébegement photo”>
@@ -143,23 +149,30 @@
               </div>
         </a>
       </div>
+      
       <div class="card last_hebergementimg" >
         <a href="#">
           <img class="card-img-top " src="img/hotelchezamina.jpg" alt=”hébegement photo”>
               <div class="card-text"> 
                     <strong>Hotel chez Amina</strong><br>
-                    Nuit à partie de 96<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></div>
+                    Nuit à partie de 96<br><p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
               </div>
-        </a>
       </div>
+        </a>
+      </section>
+      <p class="text5"><strong>Afficher plus</strong></p> 
+    </div>
       
-    </section>
-    <p class="text5"><strong>Afficher plus</strong></p> 
+   
+ 
+  
 </div><!--container close-->
+
 <!--second right image container - hebergements with 3 images -->
 <div class = "col-lg-4  expend">
 <div class="container2">
     <p class="imglot1"><strong>Les plus populaires</strong><i class="fas fa-chart-line"></i></p>
+  <section>
     <div class="card threeimgcard" >
         <div class="card-horizontal " >
           <a href="#">
@@ -198,12 +211,13 @@
             </div>
           </a>
         </div>
-      </div>    
-</div><!--container2 closse-->
-</div><!--col3 close-->
-</div><!--col9 close-->
+      </section>
+      </div>  <!--container2 closse-->  
+  </div><!--col4 close-->
 </div><!--row close-->
 </div><!--wrapper close-->
+
+
 
 
 <!--Adding left activity section to the site-->
@@ -215,15 +229,15 @@
    
     <div class="row">
      
-        <div class="col-lg-4 col-md-6 ">
-            <img class="card-img-top activityimg"  src="img/vieuxport.jpg" alt="Card image cap">
+        <div class="col-lg-4 col-md-6 full-image ">
+            <img class="card-img-top "  src="img/vieuxport.jpg" alt="Card image cap">
             <h6 class="card-title ">Vieux Port</h6>
         </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 " style="margin-left: 90px;">
-                <div class="short-div" ><img class="card-img-top" src="img/fortdepomegues.jpg" alt="Card image cap">
+            <div class="col-md-6" >
+                <div class="activityMarseille" ><img class="card-img-top" src="img/fortdepomegues.jpg" alt="Card image cap">
                     <h6 class="card-title">Fort de Pomégues</h6>
                 </div>
-                <div class="short-div"><img class="card-img-top" src="img/ilesdufrioul.jpg" alt="Card image cap">
+                <div class="activityMarseille"><img class="card-img-top" src="img/ilesdufrioul.jpg" alt="Card image cap">
                     <h6 class="card-title">Iles du Frioul</h6>
                 </div>
             </div>
@@ -235,15 +249,15 @@
   <div class = "col-lg-6 expend">
 <div class="container_RightActivity">   
     <div class="row">
-        <div class="col-lg-4 col-md-6 " >
-              <img class="card-img-top activityimg " src="img/parknational.jpg" alt="Card image cap">
+        <div class="col-lg-4 col-md-6 full-image" >
+              <img class="card-img-top  " src="img/parknational.jpg" alt="Card image cap">
               <h6 class="card-title ">Parc National des Calanques</h6>
         </div>
-            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-2" id="activityimg2" >
-                <div class="short-div" ><img class="card-img-top"  src="img/notredame.jpg" alt="Card image cap">
+            <div class="col-md-6"  >
+                <div class="activityMarseille" ><img class="card-img-top"  src="img/notredame.jpg" alt="Card image cap">
                   <h6 class="card-title">Notre-Dame-de-la-Garde</h6>
                 </div>
-                <div class="short-div" ><img class="card-img-top" src="img/parclongchamp.jpg" alt="Card image cap">
+                <div class="activityMarseille" ><img class="card-img-top" src="img/parclongchamp.jpg" alt="Card image cap">
                   <h6 class="card-title">Parc Longchamp</h6>
                 </div>
             </div>
