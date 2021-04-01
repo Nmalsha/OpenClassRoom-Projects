@@ -1,9 +1,15 @@
 body {
-  width:80%;
+  width:100%;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;}
 
   /*navigation links */
+  .container-nav{
+    margin: 20px 20px 20px 50px;
+  }
+  .set_margin{
+    margin-left: 50px;
+  }
   #linkhebergement{
     border-top: 0.5px solid blue;
   }
@@ -50,7 +56,7 @@ svg {
 .search_icon{
 color: white;
 }
-.rechechebtn{
+.righttext{
   margin-left: -41px;
 }
 /*button group */
@@ -102,6 +108,11 @@ i {
   width: 10px;
   align-items: center;
   padding: 6px;
+  }
+  .fa-info-circle{
+    font-family: "Font Awesome 5 Free";
+font-weight: 600;
+margin-right: 10px;
   }
 /* first left image containers 6imgs*/
 
