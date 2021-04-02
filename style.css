@@ -108,11 +108,12 @@ i {
   width: 10px;
   align-items: center;
   padding: 6px;
-  }
-  .fa-info-circle{
-    font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free";
 font-weight: 600;
 margin-right: 10px;
+  }
+  .fa-info-circle{
+    
   }
 /* first left image containers 6imgs*/
 
