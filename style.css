@@ -4,6 +4,7 @@ body {
   font-family: 'Raleway', sans-serif;}
 
   /*navigation links */
+  
   .container-nav{
     margin: 20px 20px 20px 50px;
   }
@@ -12,6 +13,10 @@ body {
   }
   #linkhebergement{
     border-top: 0.5px solid blue;
+    color: blue;
+  }
+  .linkactive{
+    color: blue;
   }
 .nav-link{
   font-size: 12px;
@@ -113,7 +118,8 @@ font-weight: 600;
 margin-right: 10px;
   }
   .fa-info-circle{
-    
+    font-family: "Font Awesome 5 Free";
+font-weight: 600;
   }
 /* first left image containers 6imgs*/
 
@@ -254,6 +260,13 @@ background-color: #F2F2F2;
   
 }
 @media(max-width:767px) {
+
+  .navbar_sm{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+  }
   .rechechebtn{
     visibility: hidden;
   }
@@ -329,9 +342,7 @@ h6 {
 #activityimg2{
   padding:0px;margin-left: 100px;
 }
-.container_RightActivity{
-  margin-left: 30px;
-}
+
 .right-box {
   position: relative;
   padding-top: 30px; }
