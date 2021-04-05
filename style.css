@@ -4,7 +4,9 @@ body {
   font-family: 'Raleway', sans-serif;}
 
   /*navigation links */
-  
+  .logo{
+    height:3rem
+  }
   .container-nav{
     margin: 20px 20px 20px 50px;
   }
@@ -237,7 +239,7 @@ img {
 
 /* second right image containers plus populaires 3imgs*/
 .fa-chart-line{
-  margin-left:70px;
+  margin-left:300px;
 }
 .container2 {
   
